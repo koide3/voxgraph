@@ -1,0 +1,10 @@
+sudo: required
+language: generic
+dist: noetic
+
+services:
+  - docker
+
+script:
+  - cd docker
+  - docker build -f Dockerfile ..
